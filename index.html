@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Age calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="calculator">
+        <div class="calculator-inputs">
+          <div class="calculator-inputs__date">
+            <div class="calculator-inputs__date-text">Day</div>
+            <input
+              type="text"
+              class="calculator-inputs__input"
+              placeholder="DD"
+            />
+            <div class="day-error"></div>
+          </div>
+          <div class="calculator-inputs__date">
+            <div class="calculator-inputs__date-text">Month</div>
+            <input
+              type="text"
+              class="calculator-inputs__input"
+              placeholder="MM"
+            />
+            <div class="month-error"></div>
+          </div>
+          <div class="calculator-inputs__date">
+            <div class="calculator-inputs__date-text">Year</div>
+            <input
+              type="text"
+              class="calculator-inputs__input"
+              placeholder="YYYY"
+            />
+            <div class="year-error"></div>
+          </div>
+        </div>
+        <div class="decoration">
+          <div class="decoration__line"></div>
+          <div class="decoration__button">&#8595;</div>
+        </div>
+        <div class="calculator-output">
+          <div class="calculator-output__date">
+            <span id="year" class="calculator-output__render">--</span> years
+          </div>
+          <div class="calculator-output__date">
+            <span id="month" class="calculator-output__render">--</span> month
+          </div>
+          <div class="calculator-output__date">
+            <span id="day" class="calculator-output__render">--</span> days
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
